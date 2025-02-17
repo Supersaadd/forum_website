@@ -1,0 +1,60 @@
+[{   
+    "firstname":"Idir",
+    "lastname":"Chami",
+    "login":"Idirkbyl",
+    "password":"1234",
+    "email":"idirchm@gmail.com",
+    "birthdate":"17/08/2003",
+    "account_created":"12/12/2021",
+    "role":"admin"
+},
+{
+
+    "firstname":"Nadir",
+    "lastname":"Ait Kheddache",
+    "login":"Nadir",
+    "password":"1234",
+    "email":"nadir@gmail.com",
+    "birthdate":"15/02/1997",
+    "account_created":"12/12/2021",
+    "role":"admin"
+},
+{
+    "firstname":"Maria",
+    "lastname":"Saad",
+    "login":"Maria",
+    "password":"1234",
+    "email":"maria@gmail.com",
+    "birthdate":"12/12/1990",
+    "account_created":"12/12/2021",
+    "role":"user"
+},
+{
+    "firstname":"Axel",
+    "lastname":"Blaze",
+    "login":"Axel",
+    "password":"1234",
+    "email":"axel@gmail.com",
+    "birthdate":"12/12/1990",
+    "account_created":"12/12/2021",
+    "role":"user"
+},
+{
+    "firstname":"Patrick",
+    "lastname":"Nollet",
+    "login":"Patrick",
+    "password":"1234",
+    "email":"patrick@gmail.com",
+    "birthdate":"12/12/1990",
+    "account_created":"12/12/2021",
+    "role":"user"
+},
+{
+    "firstname":"Pika",
+    "lastname":"Chu",
+    "login": "pikachu",
+    "password": "1234",
+    "email":"pikachu@gmail.com",
+    "role":"admin",
+    "birthdate": "17/08/2003"
+ }]

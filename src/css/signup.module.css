@@ -1,0 +1,154 @@
+
+
+*{
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.main{
+    height: 100vh;
+     /* background-image: url("https://source.unsplash.com/random/?nature,dark"); */
+     background-image: url('../assets/background3.jpg');
+    background-size:cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: 400;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+h1{
+    margin: 0;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    color:#ffffff;
+    gap: 1.8em;
+    padding:1rem;
+    background: rgba(0, 0, 0, 0.125);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.66);
+}
+
+@media screen and (min-width: 800px){
+    .box{
+        gap: 2em;
+        padding: 2rem;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    max-width: 300px;
+}
+  
+
+.inline{
+    display: flex;
+    gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inline .input{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.input{
+    padding: 0.9em;
+    border-radius: 20px;
+    color:white;
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    background: rgba(255, 255, 255, 0);
+    transition: 0.3s;
+}
+::placeholder{
+    color: white;
+}
+.input:focus{
+    outline: none;
+    padding: 1em;
+    transition: 0.3s;
+}
+
+
+
+.a {
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: inherit;
+  }
+  .a:hover {
+    color: rgba(255, 255, 255, 0.694);
+    transition: 0.5s;
+  }
+  
+  
+  
+.h1 {
+    font-size: 3em;
+    line-height: 1.1;
+  }
+  
+.button {
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background: rgba(221, 219, 219, 0.199);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+  }
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .button:focus {
+    outline: none;
+  }
+
+.button:active {
+   letter-spacing: 2px;
+   transition: 0.2s;
+  }
+
+
+
+/*@media  screen and (min-width: 800px){
+    .box{
+        flex-direction: row;
+    }
+    
+    h1{
+        align-self: center;
+        width: 100%;
+    }
+}
+*/
+
+

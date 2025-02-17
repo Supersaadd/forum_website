@@ -1,0 +1,45 @@
+.profile{
+    display:flex;
+    gap:2em;
+    margin: 1em;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--color-separator);
+
+}
+.avatarimg{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.p{
+    margin: 0;
+}
+
+.userinfo>*{
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .profile{
+        gap: 2em;
+    }
+    .avatarimg{
+        width: 100px;
+        height: 100px;
+    }
+    .userinfo{
+
+        
+    }
+    .p{
+        align-self: end;
+    }
+
+    
+}
+
+

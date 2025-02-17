@@ -1,0 +1,219 @@
+
+
+.message{
+    border-bottom: 1px solid var(--color-separator);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h3,h4,h5{
+    margin:0;
+}
+
+.messageUserDate{
+    display: flex;
+    align-items: center;
+    gap:0.5em;
+
+}
+
+
+
+.messageDate{
+/*Aligner a gauche la div*/
+    text-align: left;
+    font-size: small;
+}
+
+.messageDate *{
+    font-weight: 200;
+    font-size : small;
+}
+
+.messageUser{
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 0.4em;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.messageUser *{
+    font-weight: bold;
+}
+.messageUser>img{
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+
+}
+
+.messageTitle{
+    text-align: left;
+    padding-top: 0.5em;
+}
+.messageTitle>h3{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+@media (max-width: 600px){
+    .messageTitle>h3{
+        font-size: 1.2em;
+    }
+}
+
+
+.messageActions{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inline{
+    display: flex;
+    gap: 0.3em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline>button{
+    background-color: var(--color-background);
+    color: var(--color-writting);
+    border: 1px solid var(--color-separator);
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.deleteButton:hover{
+    background-color: rgb(255, 86, 86);
+    color:white;
+}
+
+.replyButton:hover{
+    background-color: #102537;
+    color:white;
+}
+
+.seeAllReplies{
+    color: var(--color-writting);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: small;
+}
+
+.seeAllReplies:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.replyButton{
+    background-color: var(--color-background);
+    color: var(--color-writting);
+    justify-self: flex-start;
+    border:none;
+    cursor: pointer;
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}
+
+
+.reply{
+    display: flex;
+    margin: 1em 0 0em 1em;
+}
+
+.reply>textarea{
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid var(--color-separator);
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    resize: none;
+}:focus{
+    outline: none;
+}
+
+.reply>button{
+    padding: 0.5em;
+    background-color: var(--color-background);
+    color:var(--color-writting);
+    border: 1px solid var(--color-separator);
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.reply>button:hover{
+    background: #102537;
+    color: var(--color-background);
+    transition: 0.4s;
+}
+
+
+.messageContent{
+    color: var(--color-writting);
+    text-align: left;
+    font-size:medium;
+}
+.messageContent p{
+    margin: 0.5em 0;
+}
+
+@media (max-width: 600px){
+    .messageContent{
+        font-size: small;
+    }
+}
+
+
+.replies .messageTitle{
+    display:none;
+}
+
+.replies{
+    padding-left: 2em;
+}
+
+.replies .message{
+    border-bottom: none;
+    padding: 0.5em 0;
+    margin: 0.5em 1em ;
+}
+
+.replies .messageContent{
+    padding-left: 1em;
+    border-left: 1px solid var(--color-separator);
+}
+
+.replies>div{
+    margin:0;
+    gap:0;
+}
+
+
+.replyingTo{
+    margin:0;
+    font-size: small;
+    text-align: left;
+}
+
+.replyingTo>span{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.likeButton{
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    cursor: pointer;
+}

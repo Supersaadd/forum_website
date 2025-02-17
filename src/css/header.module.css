@@ -1,0 +1,104 @@
+.headerWrapper{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+    background: var(--color-background);
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    border-bottom: 1px solid var(--color-separator);
+}
+
+
+.logo{
+    width: 50px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img{
+    height: 75%;
+    object-fit: cover;
+}
+
+.listButton{
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.wrapper{
+    width:50px;
+    text-align: right;
+}
+
+@media (min-width:1000px){
+    .wrapper{
+        width: 200px;
+    }
+
+    .logo{
+        width: 200px;
+    }
+
+    .img{
+        width: 100%;
+    }
+}
+
+.button {
+    outline:none;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    border-radius:50px;
+    background: var(--color-background);
+    border: 2px solid var(--color-writting);
+    color: var(--color-writting);
+    letter-spacing:1px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.button:hover {
+      color: var(--color-background);
+      background: var(--color-writting);
+}
+.button:active {
+      letter-spacing: 2px;
+    }
+
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--color-writting);
+}
+
+.menu button{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    background: var(--color-background);
+    color: var(--color-writting);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-bottom: 1px solid var(--color-writting);
+}
+.menu button:hover{
+    background: var(--color-writting);
+    color: var(--color-background);
+}
+
+.menu:last-child{
+    border-bottom: none;
+}
